@@ -1225,7 +1225,7 @@ sub LoadListHash
 sub Untaint 
 {
 	my ($s) = @_;
-  	if ($s =~ /^([\w \-\@\(\),\.\/<>]+)$/) 
+  	if ($s =~ /^([\w \=\-\@\(\),\.\/<>]+)$/) 
 	{
     	$s = $1;               # $data now untainted
   	} 
